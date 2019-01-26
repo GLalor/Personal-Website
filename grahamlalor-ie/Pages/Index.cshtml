@@ -1,0 +1,902 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="fade" class="black_overlay"></div>
+<div class="home jumbotron jumbotron-fluid">
+    <div id="home-info" class="center">
+        <div class="center">
+            <h1 style="margin-left: 0.5em;" class="name center">Graham Lalor</h1>
+        </div>
+        <div class="center">
+            <h4 class="name center" style="margin-left: 1.5em;">Software Developer</h4>
+        </div>
+        <div class="center">
+            <img class="headShot" src="~/images/img_avatar.png" alt="Avatar">
+            <a href="GrahamLalorCV.docx" download="GrahamLalorCV" class="btn btn-primary center col-sm-4" role="button">CV</a>
+            <button type="button" data-toggle="modal" data-target="#contactModal" class="contact btn btn-primary center col-sm-4">
+                Contact
+                Me
+            </button>
+        </div>
+        <div id="otherPages" class="center">
+            <a class="fa fa-linkedin fa-2x" href="https://www.linkedin.com/in/grahamlalor/"></a>
+            <a class="fa fa-github fa-2x" href="https://github.com/GLalor"></a>
+        </div>
+    </div>
+</div>
+<div class="col-sm-4">
+</div>
+<div id="aboutMe" class="aboutMe paddingDiv">
+    <br>
+    <div>
+        <h2>About Me</h2>
+        <p>
+            As you have seen from going through my profile, I graduated in 2018 with a Bachelor of Computer Science
+            from the Institute
+            of Technology Tallaght. During my time studying there, and from several positions I have held over the
+            last
+            five years, I have gained excellent experience in teamwork, communication skills and organisation
+            skills.
+            I am hard-working, and have experience in effective and efficient team player, no matter what type of
+            organisation
+            or customer-interaction scenario. I am available at your convenience to meet for interview at any time.
+            My
+            aim is to study hard and get my degree in Computer Science and strive to reach the top of my career
+            ladder.
+        </p>
+    </div>
+
+    <br>
+    <br>
+</div>
+<div class="paralax-1">
+</div>
+<div id="grades" class="grades paddingDiv">
+    <br>
+
+    <h2>Acedemics</h2>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab active" data-toggle="pill" href="#4thYear" role="tab"
+               aria-controls="pills-home" aria-selected="false">4th Year</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#3rdYear" role="tab" aria-controls="pills-profile"
+               aria-selected="false">3rd Year</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#2ndYear" role="tab" aria-controls="pills-contact"
+               aria-selected="false">2nd Year</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#1stYear" role="tab" aria-controls="pills-contact"
+               aria-selected="false">1st Year</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane active " id="4thYear" role="tabpanel" aria-labelledby="pills-home-tab">
+            <h6>GPA: 3.71</h6>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Module</th>
+                        <th>Grade</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="popover" title="Module description" data-content="To be able to design and develop enterprise level applications for the Microsoft .Net platform using C#, with particular emphasis on web and cloud applications.">
+                        <td>4th Year Project</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                     style="width:85%">85%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="To be able to design and develop enterprise level applications for the Microsoft .Net platform using C#, with particular emphasis on web and cloud applications.">
+                        <td>Enterprise Application Development 2</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:89%">89%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="To be able to design and develop enterprise level applications for the Microsoft .Net platform using C#, with particular emphasis on web and cloud applications.">
+                        <td>Algorithms & Computation</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:83%">83%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="To be able to design and develop enterprise level applications for the Microsoft .Net platform using C#, with particular emphasis on web and cloud applications.">
+                        <td>Enterprise Database Technologies</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:85%">85%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="To be able to design and develop enterprise level applications for the Microsoft .Net platform using C#, with particular emphasis on web and cloud applications.">
+                        <td>Algorithms & Computation</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:83%">83%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="To be able to design and develop enterprise level applications for the Microsoft .Net platform using C#, with particular emphasis on web and cloud applications.">
+                        <td>Computational Theory</td>
+                        <td>B+</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:75%">75%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="To be able to design and develop enterprise level applications for the Microsoft .Net platform using C#, with particular emphasis on web and cloud applications.">
+                        <td>Enterprise Application Development</td>
+                        <td>B+</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:78%">78%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="	This module develops the critical skills needed to compile, analyse, model and demonstrate data visualisation techniques using specific tools and technologies. This module explores and demonstrates the Human Computer Interaction principles and guidelines for modern interface design and user experience.">
+                        <td>Ineteractive Media Design</td>
+                        <td>B</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:69%">69%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="To instill in the student the fundamental principles, issues, opportunities and challenges in enabling information to be modelled, published, and reasoned about on the web; to develop an understanding of the means by which data can be integrated and manipulated as a unified body of information; to be cognisant of the value of, and potential applications of user generated content published on the web.">
+                        <td>Social Network Analysis</td>
+                        <td>B+</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:78%;">78%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enterprise Performance Architecture</td>
+                        <td>B+</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:75%;">75%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Information Management</td>
+                        <td>B+</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:75%;">75%</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade " id="3rdYear" role="tabpane2" aria-labelledby="pills-profile-tab">
+            <h6>GPA: 3.36</h6>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Module</th>
+                        <th>Grade</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="popover" title="Module description" data-content="This module provides the student with the knowledge and skills to analyse, design, develop, test and debug applications using data structures and algorithms.">
+                        <td>Algorithms and Data Structures</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="88"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:88%;">88%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="A small cross platform uility application used as a todo list and BMI calculator.">
+                        <td>3rd Year Project</td>
+                        <td>B</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="65"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:65%;">65%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="
+                        To communicate a knowledge and understanding of the requirments of commercial web applications.
+                        To build a dynamic web application using server side scripting technologies.
+                        To use a database for persistent data storage in a web application.
+                        To demonstrate applications of the integrated technologies i.e. client side, server side scripting and database connectivity.
+                        To communicate a knowledge and understanding of security issues in web applications.">
+                        <td>Web Application Development</td>
+                        <td>B+</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0"
+                                     aria-valuemax="100" style="width:77%;">77%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Operating Systems</td>
+                        <td>B+</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0"
+                                     aria-valuemax="100" style="width:72%;">72%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Innovation & Entrepreneurship</td>
+                        <td>B</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0"
+                                     aria-valuemax="100" style="width:68%;">68%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cloud services and distrib computing</td>
+                        <td>B</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="63" aria-valuemin="0"
+                                     aria-valuemax="100" style="width:63%;">63%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Experiential Learning</td>
+                        <td>Pass</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                     aria-valuemax="100" style="width:0%;">0%</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade " id="2ndYear" role="tabpane3" aria-labelledby="pills-contact-tab">
+            <h6>GPA: 3.71</h6>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Module</th>
+                        <th>Grade</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="popover" title="Module description" data-content="This module builds on the topics covered in Software Development 3. On completion of this module, the student will be capable of developing a database application and connecting to it from a Java program. The student will gain an understanding of the use of collections and generics in OO programming, and applying software quality concepts. This module also introduces the student to application development for a current web or mobile framework.">
+                        <td>Software Development 4</td>
+                        <td>B+</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70"
+                                     aria-valuemin="0" aria-valuemax="70" style="width:70%;">70%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="To provide the learner with the skills necessary to undertake the design, development, implementation and testing of a complete system from conception to execution. To enable the learner to contribute successfully to a team effort and develop collaborative skills. To develop self-analysis and evaluation skills. To develop presentation skills.">
+                        <td>2nd Year Project</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="82" style="width:82%;">82%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="	This module provides the student with knowledge and skills to implement inter LAN and WAN routing using both static routing, distance vector and link state dynamic routing protocols and to implement, verify and troubleshoot networks, routing and switching operations.">
+                        <td>Networking 2</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="80" style="width:80%;">80%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Management Science</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="88" style="width:88%;">88%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Object Orientation Analysis & Design</td>
+                        <td>B+</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0"
+                                     aria-valuemin="70" aria-valuemax="70" style="width:70%;">70%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Information Security</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="85" style="width:85%;">85%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Software Development 3</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="85" style="width:85%;">85%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>software Quality Assurance & Testing</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="83" style="width:83%;">83%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Networking 1</td>
+                        <td>B</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
+                                     aria-valuemin="0" aria-valuemax="63" style="width:63%;">63%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Database Design & Programming</td>
+                        <td>B</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
+                                     aria-valuemin="0" aria-valuemax="65" style="width:65%;">65%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Discrete Mathematics 2</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="85" style="width:85%;">85%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Web Design & Development</td>
+                        <td>B+</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70"
+                                     aria-valuemin="0" aria-valuemax="70" style="width:70%;">70%</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade " id="1stYear" role="tabpane4" aria-labelledby="pills-contact-tab">
+            <h6>GPA: 3.79</h6>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Module</th>
+                        <th>Grade</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="popover" title="Module description" data-content="This module provides an understanding of the fundamental concepts of the object-oriented programming (OOP) paradigm, and explores the principles of class/object programming. The student will gain an understanding of OOP and how to design and build applications using object-oriented techniques.">
+                        <td>Software Development 2</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="80" style="width:80%;">80%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="The aim of this module is to introduce the fundamentals of Object Oriented Systems Analysis and Design.">
+                        <td>Object Oriented System Analysis</td>
+                        <td>B+</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70"
+                                     aria-valuemin="0" aria-valuemax="70" style="width:70%;">70%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="popover" title="Module description" data-content="The aim of this module is to provide students with the necessary methods and techniques to increase their personal and business online communication skills.">
+                        <td>Social Media Communications</td>
+                        <td>B</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
+                                     aria-valuemin="0" aria-valuemax="65" style="width:65%;">65%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>statistics</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="85" style="width:85%;">85%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Database Fundamentals</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="80" style="width:80%;">80%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Operating Systems Fundamentals</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="90" style="width:90%;">90%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Software Development 1</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="80" style="width:80%;">80%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Computer architecture</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="95" style="width:95%;">95%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fundamentals of Web & Interface</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="80" style="width:80%;">80%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Business Information Systems</td>
+                        <td>B+</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70"
+                                     aria-valuemin="0" aria-valuemax="70" style="width:70%;">70%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Discrete Mathematics 1</td>
+                        <td>B+</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70"
+                                     aria-valuemin="0" aria-valuemax="70" style="width:70%;">70%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Learning to Learn</td>
+                        <td>A</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                                     aria-valuemin="0" aria-valuemax="80" style="width:80%;">80%</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="paralax-2">
+</div>
+<div id="skills" class="skills paddingDiv">
+    <br>
+    <h2>
+        Skills
+        <button class="showMore btn btn-info">Show more</button>
+    </h2>
+    <br>
+    <div class="card-deck">
+        <div class="card  col-sm-3">
+            <img class="card-img-top" src="~/images/java.jpg" alt="Java logo image">
+            <div class="card-body">
+                <h4 class="card-title">Java</h4>
+            </div>
+        </div>
+        <div class="card col-sm-3">
+            <img class="card-img-top" src="~/images/python.png" alt="Python logo image">
+            <div class="card-body">
+                <h4 class="card-title">Python</h4>
+            </div>
+        </div>
+        <div class="card col-sm-3">
+            <img class="card-img-top" src="~/images/c.jpg" alt="C logo image">
+            <div class="card-body">
+                <h4 class="card-title">C#</h4>
+            </div>
+        </div>
+        <div class="card col-sm-3">
+            <img class="card-img-top" src="~/images/cplusplus.png" alt="C plus plus logo image">
+            <div class="card-body">
+                <h4 class="card-title">C++</h4>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="moreSkills">
+        <div class="card-deck">
+            <div class="card col-sm-3">
+                <img class="card-img-top" src="~/images/github.png" alt="Git hub logo image">
+                <div class="card-body">
+                    <h4 class="card-title">GitHub</h4>
+                </div>
+            </div>
+            <div class="card col-sm-3">
+                <img class="card-img-top" src="~/images/ionic.png" alt="Ionic logo image">
+                <div class="card-body">
+                    <h4 class="card-title">Ionic</h4>
+                </div>
+            </div>
+            <div class="card col-sm-3">
+                <img class="card-img-top" src="~/images/javascript.png" alt="JavaScript logo image">
+                <div class="card-body">
+                    <h4 class="card-title">JavaScript</h4>
+                </div>
+            </div>
+            <div class="card col-sm-3">
+                <img class="card-img-top" src="~/images/sql.png" alt="SQL logo image">
+                <div class="card-body">
+                    <h4 class="card-title">SQL</h4>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card-deck">
+            <div class="card col-sm-3">
+                <img class="card-img-top" src="~/images/mongo.png" alt="Mongo Database logo image">
+                <div class="card-body">
+                    <h4 class="card-title">Mongo DB</h4>
+                </div>
+            </div>
+            <div class="card col-sm-3">
+                <img class="card-img-top" src="~/images/html.png" alt="HTML logo image">
+                <div class="card-body">
+                    <h4 class="card-title">HTML</h4>
+                </div>
+            </div>
+            <div class="card col-sm-3">
+                <img class="card-img-top" src="~/images/bootstrap.png" alt="Bootstrap logo imagep">
+                <div class="card-body">
+                    <h4 class="card-title">Bootstrap</h4>
+                </div>
+            </div>
+            <div class="card col-sm-3">
+                <img class="card-img-top" src="~/images/linux.png" alt="Linux logo image">
+                <div class="card-body">
+                    <h4 class="card-title">Linux</h4>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card-deck">
+            <div class="card col-sm-3">
+                <img class="card-img-top" src="~/images/windows.jpg" alt="Windows logo image">
+                <div class="card-body">
+                    <h4 class="card-title">Windows</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="extraPages row border border-dark">
+        <h2 class="center">You can alos find me on</h2>
+        <br><br><br><br><br><br><br>
+        <div class="card-deck">
+            <div class="card">
+                <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light"
+                    data-vanity="grahamlalor">
+                    <a class="LI-simple-link" href='https://ie.linkedin.com/in/grahamlalor?trk=profile-badge'>Graham Lalor</a>
+                </div>
+            </div>
+            <div class="card" style="width: 250px;">
+                <img class="card-img-top" src="~/images/hackerRank.png" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">HackerRank</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://www.hackerrank.com/grahamlalor" class="btn btn-success">HackerRank</a>
+                </div>
+            </div>
+        </div>
+    </div>-->
+<div class="paralax-3">
+</div>
+<div id="projects" class="projects paddingDiv">
+    <br>
+    <br>
+    <br>
+    <h2>Projects</h2>
+    <div id="accordion" role="tablist">
+        <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+                <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        4th Year Project idea
+                    </a>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <h6>Description:</h6>Option pricer for stocks in the S&P 500 list. Prices calculated using
+                    Black Sholes
+                    algorithm and simulated using the Monte Carlo simulation method.
+                    <h6>Technologies & Tools Used:</h6>
+                    Python, Cuda, Hadoop, Azure
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingTwo">
+                <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
+                       aria-controls="collapseTwo">
+                        2nd Year Project
+                    </a>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    <h5 class="center" style="padding-left: 45%;">Online Football Simulation Game</h5>
+                    <h6>Description:</h6>
+                    A group project undertaken in second year involving the development of a website and database
+                    to have create, read, update
+                    and delete functionality. The game would allow several users the ability to create and maintain
+                    a
+                    team for a season. A user would have to create a team and submitted their line up each week.
+                    When
+                    all the user submitted their team the game would simulate that week’s fixtures that where
+                    generated
+                    at the begging of each season. The line ups submitted would be analysed and given a team score
+                    which
+                    was used calculate scores and the winning team. The league table would be updated
+                    automatically.
+                    The user also had the options to train players and buy and sell players to earn money and
+                    develop
+                    their team.
+                    <h6>Challenges faced:</h6>
+                    <ul>
+                        <li>Creating fixtures automatically insuring each team plays twice in a season.</li>
+                        <li>
+                            Creating an users team on registration insuring the user was given a team with players
+                            that where
+                            not already on a team.
+                        </li>
+                        <li>Sharing our code between project members so as a group learned to use git commands.</li>
+                    </ul>
+                    <h6>Technologies & Tools Used:</h6>
+                    Java, HTML, CSS, Bootstrap, SQL and Play Framework
+                    <h6>Screenshots:</h6>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="~/images/2ndYearProject1.png" alt="First slide" style="height: auto;">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="~/images/2ndYearProject2.png" alt="Second slide" style="height: auto;">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="~/images/2ndYearProject3.png" alt="Third slide" style="height: auto;">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+<div class="paralax-4">
+</div>
+<div id="experience" class="paddingDiv">
+    <br>
+    <br>
+    <br>
+    <h2>Experience</h2>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <img class="col-sm-3" src="~/images/Workday_logo.jpg">
+            <div class="float-right col-sm-9">
+                <p class="float-left">
+                    <h5>Employer:</h5> Wrokday
+                    <br>
+                    <h5>Job Title:</h5> Application Development
+                    <br>
+                    <h5>Date:</h5> September 2018 – Present
+                    <br>
+                    <!--<h5>Duties:</h5>
+                    <ul>
+                        <li>Talk to customers to see if any of the items are on sale are for them or if they fix a
+                            problem
+                            they are having.</li>
+                        <li>Interacting with customers and insure that are taken care of while in the store.</li>
+                        <li>Deal with any customer problems at the help desk . Developed a co configure
+                            tutorilication to
+                            download and process the information required</li>
+                    </ul>-->
+                </p>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <img class="col-sm-3" src="~/images/Fidelity+Investments.png">
+            <div class="float-right col-sm-9">
+                <p>
+                    <h5>Employer:</h5> Fidelity Investments
+                    <br>
+                    <h5>Job Title:</h5> Software Development Intern
+                    <br>
+                    <h5>Date:</h5> January 2017 – August 2017
+                    <br>
+                    <h5>Duties:</h5>
+                    <ul>
+                        <li>Developing in an agile environment.</li>
+                        <li>Quickly learning new tool and skills when needed.</li>
+                        <li>
+                            Developed a cross platform application and an admin tool to configure tutorials through
+                            a web
+                            browser and enable the application to download and process the information required.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <img class="col-sm-3" src="~/images/powercity.png">
+            <div class="float-right col-sm-9">
+                <p class="float-left">
+                    <h5>Employer:</h5> PowerCity
+                    <br>
+                    <h5>Job Title:</h5> Salesman
+                    <br>
+                    <h5>Date:</h5> February 2013 – May 2017
+                    <br>
+                    <h5>Duties:</h5>
+                    <ul>
+                        <li>
+                            Talk to customers to see if any of the items are on sale are for them or if they fix a
+                            problem
+                            they are having.
+                        </li>
+                        <li>Interacting with customers and insure that are taken care of while in the store.</li>
+                        <li>
+                            Deal with any customer problems at the help desk . Developed a co configure
+                            tutorilication to
+                            download and process the information required
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<!--<footer id="footer" class="navbar-dark bg-dark" style="color: white;">
+        &#169 2017, All rights reserved
+</footer>-->
+<!-- Modals -->
+<div class="modal fade" id="contactModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Contact</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
+                               autocorrect="off" autocapitalize="off" spellcheck="false" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Please type your message here..."
+                                  required></textarea>
+                    </div>
+
+            </div>
+            <div class="modal-footer">
+                <button id="sendEmail" type="submit" class="btn btn-success">Submit</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
